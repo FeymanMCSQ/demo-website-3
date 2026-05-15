@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-physio-text antialiased bg-physio-warm;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #A85A39;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .section-pad {
+    @apply py-16 md:py-24;
+  }
+
+  .container-pad {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
